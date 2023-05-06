@@ -12,9 +12,9 @@ Project Requirements
 
 Stages of Project to Localhost Implementation
 - Clone link repo github
-- Setting applicationContext.xml for database configuration
+- Setting application.properties for database configuration
 - Running the project via maven with the command mvn spring-boot:run
-  -
+
 
 Run Postman or command line
 
