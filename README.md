@@ -1,4 +1,4 @@
-# sping-boot-jwt-postgresql
+# Sping Boot JWT With Postgre SQL and Role
 Build Project Sping Boot With JWT and PostgreSQL
 
 User Registration, User Login and Authorization process
@@ -18,7 +18,7 @@ Stages of Project to Localhost Implementation
 
 Run Postman or command line
 
-- Create user with curl (replaced body part)
+- Create user with curl (replaced body part) \
 curl --location 'http://localhost:8080/api/auth/signup' \
 --header 'Content-Type: application/json' \
 --data-raw '{
@@ -28,7 +28,7 @@ curl --location 'http://localhost:8080/api/auth/signup' \
      "role": ["admin","mod"]
 }'
 
-- Login with user rochiyat
+- Login with user rochiyat \
 curl --location 'http://localhost:8080/api/auth/signin' \
 --header 'Content-Type: application/json' \
 --data '{
@@ -36,10 +36,10 @@ curl --location 'http://localhost:8080/api/auth/signin' \
      "password": "123456789"
 }'
 
-- Get Job List (token is replaced with a new token)
+- Get Job List (token is replaced with a new token) \
 curl --location 'http://localhost:8080/api/test/job-list' \
 --header 'Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb2NoaXlhdCIsImlhdCI6MTY4MzI4MDI3MywiZXhwIjoxNjgzMzY2NjczfQ.WfMMQVV1U6fpf23JUfV3Gt1cyQmxKDZqbf w8gVNC07eixGc90To74OdynG5U3tWkq5OTAYeQ5-ELBlz-VdWORw'
 
-- Get Job By Id (token is replaced with a new token)
+- Get Job By Id (token is replaced with a new token) \
 curl --location 'http://localhost:8080/api/test/job/7638eee4-4e75-4c06-a920-ea7619a311b5' \
 --header 'Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb2NoaXlhdCIsImlhdCI6MTY4MzI4MDI3MywiZXhwIjoxNjgzMzY2NjczfQ.WfMMQVV1U6fpf23JUfV3Gt1cyQmxKDZqbf w8gVNC07eixGc90To74OdynG5U3tWkq5OTAYeQ5-ELBlz-VdWORw'
